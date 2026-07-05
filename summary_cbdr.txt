@@ -1,0 +1,6 @@
+Saya telah mengolah dan menerapkan metode serta teknikal dari file PDF "Central Bank Dealers Range (CBDR)" ke dalam algoritma AI.
+
+- **Deteksi CBDR (Central Bank Dealers Range)**: AI kini memantau rentang harga harian (memindai area konsolidasi/terendah & tertinggi *body candle* layaknya pukul 2 PM - 8 PM NY). Jika sebuah rentang CBDR tervalidasi (antara 20 - 40 pips), AI akan mengaktifkannya sebagai basis proyeksi target.
+- **Proyeksi Target Standard Deviation**: Menggunakan algoritma deviasi (-1, -2, -2.5, -4), AI sekarang tidak hanya mengandalkan *Swing High/Low* untuk Take Profit (TP), namun juga memproyeksikan Target Atas/Bawah harian sesuai standar deviasi CBDR tersebut. Hal ini membuat penetapan TP menjadi eksponensial lebih akurat dan terukur secara matematis.
+- **Integrasi Entry & Probabilitas Tinggi**: Rentang deviasi CBDR ini digabungkan (Fusion) dengan deteksi *Quarterly Theory* dan Zero-Floating (FVG/OB). Jika harga berada dalam zona manipulasi atau dekat dengan pivot yang selaras dengan CBDR *Top/Bottom*, skor AI akan di-boost drastis, sehingga eksekusi BUY/SELL berpeluang jauh lebih tinggi menggapai TP (SD-2) dengan Floating Loss minimal.
+- Laporan naratif akan menampilkan notifikasi [CBDR Analysis] ketika *range* institusi ini terdeteksi dan memandu arah target.

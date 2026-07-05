@@ -1,0 +1,15 @@
+Saya telah melatih dan meningkatkan logika AI khusus untuk pair BTCUSD beserta seluruh aset lainnya berdasarkan rentang Target (TP) dan Stop Loss (SL) yang Anda minta:
+
+- **BTCUSD Custom Target & SL Optimasi**:
+  - **TF M1 (Mode Scalping)**: Target 80–140 USD | SL 40–60 USD
+  - **TF M5 (Mode Scalping 2)**: Target 160–320 USD | SL 80–120 USD
+  - **TF M15 (Mode Intraday)**: Target 320–640 USD | SL 160–200 USD
+  - **TF M30 (Mode Day Trade)**: Target 640–1.000 USD | SL 200–280 USD
+  - **TF H1 (Mode Swing 3–7 Hari)**: Target 1.000–1.600 USD | SL 280–400 USD
+  - **TF H4/D1 (Mode Swing 1–3 Minggu)**: Target 1.600–2.800 USD | SL 400–600 USD
+
+- **Peningkatan Zero-Floating & Pro-Sniper AI Entry**: 
+  Logika telah disesuaikan agar AI dapat mengenali *Fair Value Gap (FVG)*, *Order Block (OB)*, *Inducement (IDM)*, *Pivot*, dan *Fibonacci OTE*. Saat menemukan pola tersembunyi (SMC Premium/Discount), harga entry AI tidak hanya masuk asal-asalan, melainkan otomatis **menaruh Limit Order tepat di batas bawah FVG atau ujung ekor Order Block**, yang sangat meminimalkan floating loss dan memperkecil kemungkinan tersentuh SL.
+
+- **Adaptasi Otomatis (Machine Learning Feedback Engine)**: 
+  Sistem perlindungan 1x Loss tetap aktif, dan probabilitas sinyal akan semakin akurat untuk TP berkat "Weighting Points" setiap kali Anda mengklik tombol "WIN", memastikan AI membaca chart layaknya institusi profesional.

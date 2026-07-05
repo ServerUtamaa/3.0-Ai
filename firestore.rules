@@ -1,0 +1,38 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // 0. Global Safety Net
+    match /{document=**} {
+      allow read, write: if false;
+    }
+    
+    // Primitives
+    function isSignedIn() { return request.auth != null; }
+    function isValidId(id) { return id is string && id.size() <= 128 && id.matches('^[a-zA-Z0-9_\\-]+$'); }
+    function incoming() { return request.resource.data; }
+    function existing() { return resource.data; }
+    
+    // Validation
+    function isValidUser(data) {
+      return data.keys().hasAll(['id', 'username', 'email', 'role', 'tokens', 'membershipTier', 'membershipExpiresAt', 'createdAt', 'lastLogin']) 
+        && data.id is string && data.id == request.auth.uid
+        && data.username is string && data.username.size() <= 64
+        && data.email is string && data.email.size() <= 128
+        && data.role in ['USER', 'DEV', 'GUEST', 'PENDING']
+        && (data.tokens is number || data.tokens is int)
+        && data.membershipTier in ['NONE', 'BASIC', 'WEEKLY', 'BIWEEKLY', 'VIP', 'MONTHLY', 'LIFETIME']
+        && (data.membershipExpiresAt is number || data.membershipExpiresAt is int)
+        && (data.createdAt is number || data.createdAt is int)
+        && (data.lastLogin is number || data.lastLogin is int);
+    }
+    
+    function isDev() {
+      return isSignedIn() && exists(/databases/$(database)/documents/users/$(request.auth.uid)) && get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role == 'DEV';
+    }
+
+    // match rules
+    match /users/{userId} {
+      allow read, write: if true;
+    }
+  }
+}

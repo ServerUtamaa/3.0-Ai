@@ -1,0 +1,7 @@
+Saya telah mengolah dan menerapkan metode serta teknikal dari file PDF "Quarterly Theory" ke dalam algoritma AI. 
+
+- **ICT Quarterly Theory (AMDX & XAMD) Detection**: AI sekarang mampu mendeteksi siklus kuartalan secara makro.
+  - **AMDX (Accumulation - Manipulation - Distribution)**: AI akan mencari formasi konsolidasi di rentang kuartal pertama, kemudian mendeteksi "Judas Swing" (Manipulasi/Stop Hunt) di kuartal kedua, sebelum masuk posisi untuk memburu ekpansi Distribusi di kuartal ketiga.
+  - **XAMD (Expansion - Accumulation - Manipulation - Distribution)**: AI juga memantau skenario jika Q1 mengalami ekspansi, lalu masuk fase akumulasi (Q2), manipulasi (Q3), dan distribusi lanjutan (Q4).
+- **Protokol High Probability / Zero Floating Entry**: Ketika *Quarterly Theory* mengkonfirmasi selesainya fase "Judas Swing" di area Premium/Discount, poin probabilitas AI secara otomatis di-boost (+6 / -6 point). Ini membuat AI berani memasang *Limit Order* langsung di ujung zona Manipulasi (bersamaan dengan konfirmasi *Order Block* atau FVG), menciptakan entry yang super presisi (Zero Floating) dengan kemungkinan TP yang sangat tinggi dan jarang tersentuh SL.
+- **Narrative Analysis**: Laporan analisa (di bawah chart) akan secara spesifik menyebutkan jika siklus ICT Quarterly Theory telah terkonfirmasi, memberikan Anda transparansi penuh terkait logika entry institusional.

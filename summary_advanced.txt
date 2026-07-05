@@ -1,0 +1,6 @@
+Saya telah mengolah dan menerapkan metode serta teknikal dari file PDF "Advanced SMC Strategy - Entry Points" ke dalam algoritma AI.
+
+- **Integrasi Advanced SMC Entry (Scheme 1-8)**: AI kini dapat secara pintar mendeteksi struktur *Point of Interest* (POI) secara lebih spesifik, tidak lagi masuk *blind entry*. AI akan mencari kriteria **IDM (Inducement)** dan **CHoCH** pada *Lower Time Frame* sebelum memberikan sinyal. 
+- **IFC (Institutional Funding Candle) Snipe Entry**: Jika terdeteksi bahwa likuiditas IDM telah disapu oleh *shadow* panjang dari candle IFC (seperti yang diajarkan pada Scheme 2, 4, 6, dan 8), AI akan meningkatkan skor probabilitas (+10 poin) dan akan langsung memberikan sinyal *Entry* pada pengujian (Retest) zona IFC tersebut tanpa menunggu konfirmasi IDM sekunder. 
+- **Proteksi SMT (Smart Money Trap)**: AI sekarang dibekali dengan **[SMT WARNING]**. Jika harga bereaksi pada Order Block, **namun belum menyapu likuiditas IDM / CHoCH**, AI akan memotong skor sinyal secara dramatis (-10 poin) untuk mencegah Anda masuk ke dalam jebakan *Smart Money Trap*.
+- Model dan protokol entry ini akan secara otomatis ditampilkan di teks naratif (Layer 5) pada aplikasi. Semua integrasi bekerja *seamless* dengan protokol *Zero Floating* sebelumnya.
